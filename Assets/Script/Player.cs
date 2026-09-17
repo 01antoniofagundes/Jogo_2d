@@ -13,12 +13,12 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y);
+        float moveHorizontal = Input.GetAxis("Horizontal"); //reconhece as teclas A e D como moviemnto horizontal
+        rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y); //adiciona a velocidade de movimento
 
-         if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //reconhece a barra de espaço 
         {
-            rb.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse); // adiciona uma força no pulo
 
         }
     }

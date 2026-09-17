@@ -8,3 +8,5 @@ jogo2d
 
 27/08 - Aprendemos um pouco sobre GameDesign, e algumas áreas dela. Debatemos sobre opiniões e visões de generos de jogos, utilizando alguns jogos como exemplo;
         Vimos um video de escolha de design do jogo HoB.
+
+17/09 - Voltamos a programar! Fizemos progresso no Jogo2D, adicionando pulo e movimento.

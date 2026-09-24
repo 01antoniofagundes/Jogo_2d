@@ -10,3 +10,7 @@ jogo2d
         Vimos um video de escolha de design do jogo HoB.
 
 17/09 - Voltamos a programar! Fizemos progresso no Jogo2D, adicionando pulo e movimento.
+
+22/09 - Fizemos uma gambiarra e arrastamos a camera para o player.
+
+24/09 - começamos a fazer o mapa, adicionei o chão.

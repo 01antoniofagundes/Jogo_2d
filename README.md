@@ -14,3 +14,5 @@ jogo2d
 22/09 - Fizemos uma gambiarra e arrastamos a camera para o player.
 
 24/09 - começamos a fazer o mapa, adicionei o chão.
+
+29/09 - Adicionamos a tag dano, terminamos a primeira fase com o scene management, aprendemos também sobre o prefab.

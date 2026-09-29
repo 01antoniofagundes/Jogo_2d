@@ -36,8 +36,9 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Dano"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(0); //reconhece a tag dano e carrega a cena 0
         }
+       
     }
 
     void OnCollisionExit2D(Collision2D collision)

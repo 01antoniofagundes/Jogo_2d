@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public float speed = 5f;
     private Rigidbody2D rb;
     private bool isGrounded = false;
+
     void Start()
     {
     rb = GetComponent<Rigidbody2D>();    
@@ -18,9 +20,11 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded) //reconhece a barra de espaço 
         {
-            rb.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse); // adiciona uma força no pulo
+            rb.AddForce(new Vector2(0f, 6.5f), ForceMode2D.Impulse); // adiciona uma força no pulo
         }
-
+        
+        
+        
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -28,6 +32,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("ground"))
         {
             isGrounded = true; //reconhece quando o jogador está no chao
+        }
+
+        if (collision.gameObject.CompareTag("Dano"))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 

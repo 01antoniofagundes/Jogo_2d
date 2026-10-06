@@ -6,10 +6,12 @@ public class Player : MonoBehaviour
     public float speed = 5f;
     private Rigidbody2D rb;
     private bool isGrounded = false;
+    public bool temChave;
 
     void Start()
     {
-    rb = GetComponent<Rigidbody2D>();    
+    rb = GetComponent<Rigidbody2D>();
+        temChave = false;
     }
 
     

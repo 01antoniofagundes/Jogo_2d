@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using UnityEngine;
 
 public class SeguirPlayer : MonoBehaviour
@@ -6,9 +7,16 @@ public class SeguirPlayer : MonoBehaviour
 
     public float velocidade = 3f;
     public float distanciaMinima = 1.5f;
+    private bool seguindo;
 
-    private bool seguindo = false;
+    private BoxCollider2D BoxCollider2D;
 
+
+    private void Start()
+    {
+        BoxCollider2D = GetComponent<BoxCollider2D>();
+
+    }
     void Update()
     {
         if (seguindo && player != null) // seguindo = false
@@ -20,6 +28,7 @@ public class SeguirPlayer : MonoBehaviour
             {
                 transform.position = Vector2.MoveTowards(transform.position, player.position, velocidade * Time.deltaTime);
                 //Faz a chave se movimentar da posição que ela está, até chegar ao player
+                BoxCollider2D.isTrigger = true;
             }
         }
     }
@@ -32,6 +41,14 @@ public class SeguirPlayer : MonoBehaviour
             //Ao encostar, seguindo = true
             player = collision.transform;
             seguindo = true;
+
+            if (collision.gameObject.CompareTag("Porta"))
+            {
+                collision.gameObject.GetComponent<Player>().temChave = true;
+                //O bool "temChave" vira verdadeiro no Player ao encostar na chave.
+            }
         }
     }
+    
 }
+

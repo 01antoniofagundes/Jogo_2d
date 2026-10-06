@@ -16,3 +16,5 @@ jogo2d
 24/09 - começamos a fazer o mapa, adicionei o chão.
 
 29/09 - Adicionamos a tag dano, terminamos a primeira fase com o scene management, aprendemos também sobre o prefab.
+
+06/10 - Adicionamos MUITA coisa, mecanica da chave, porta, troca de cena, e dash, a fase1 está praticamente completa.

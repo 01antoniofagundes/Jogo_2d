@@ -18,3 +18,5 @@ jogo2d
 29/09 - Adicionamos a tag dano, terminamos a primeira fase com o scene management, aprendemos também sobre o prefab.
 
 06/10 - Adicionamos MUITA coisa, mecanica da chave, porta, troca de cena, e dash, a fase1 está praticamente completa.
+
+15/10 - Adicionamos apenas a tela de Game Over, mas não fizemos a programação.

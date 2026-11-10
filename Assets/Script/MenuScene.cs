@@ -29,8 +29,6 @@ public class MenuScene : MonoBehaviour
                 Pausar();
             }
 
-
-
         }
     }
 
@@ -49,6 +47,19 @@ public class MenuScene : MonoBehaviour
         pause = false;
         pPause.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    public void MostrarGameOver()
+    {
+        acabou = true;
+        pGameover.SetActive (true);
+        Time.timeScale = 0f;
+    }
+
+    public void Reiniciar()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 

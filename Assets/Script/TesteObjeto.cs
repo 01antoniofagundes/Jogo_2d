@@ -5,7 +5,7 @@ public class SeguirPlayer : MonoBehaviour
 {
     private Transform player;
 
-    public float velocidade = 3f;
+    public float velocidade = 5.6f;
     public float distanciaMinima = 1.5f;
     private bool seguindo;
 

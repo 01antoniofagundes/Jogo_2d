@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     // Guarda a direção que o jogador está olhando
     private float direction = 1f;
 
+    public MenuScene menu;
+
 
     void Start()
     {
@@ -130,7 +132,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Dano"))
         {
-            SceneManager.LoadScene(0);
+            menu.MostrarGameOver();
         }
     }
 

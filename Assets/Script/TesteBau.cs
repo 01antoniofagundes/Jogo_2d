@@ -8,7 +8,7 @@ public class Portao : MonoBehaviour
     {
         if (other.CompareTag("Porta") && other.GetComponent<Player>().temChave == true)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("fas2");
         }
     }
 

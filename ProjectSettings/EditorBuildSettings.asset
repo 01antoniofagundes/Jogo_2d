@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/faseum.unity
-    guid: 38f6a5036095a1e49b8ca1cf8938a40f
+    path: Assets/Scenes/menu.unity
+    guid: f57ab6181d231ca4bbb423c4378db432
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

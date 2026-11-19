@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vitoria.unity
     guid: 4c9fef5f622c09648b9dbccb03e38cdf
+  - enabled: 1
+    path: Assets/Scenes/ERRADO.unity
+    guid: e13ebe9aaeb381242bf92662b136dae3
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
